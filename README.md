@@ -10,17 +10,9 @@
 
 ---
 
-## 📋 Quick Navigation
-
-1. **[Overview](#overview)** — Business impact, technical stack, career positioning
-2. **[Architecture](#architecture)** — Data pipeline, AI systems, Agile framework
-3. **[Installation & Usage](#installation--usage)** — Setup, code examples, deployment
-4. **[Key Findings](#key-findings)** — Model performance, business insights, ROI
-5. **[Skills & Career](#skills--career-positioning)** — Technical depth, PM mastery, 2026 market context
-
----
-
 ## Overview
+
+### Read the full story: *Medium* Article
 
 ### The Challenge
 
@@ -54,7 +46,7 @@ Full-scale enterprise AI system combining:
 This project demonstrates:
 - ✅ Technical excellence (data engineering, ML/AI, MLOps)
 - ✅ Operational excellence (production deployment, monitoring, versioning)
-- ✅ Team leadership (Agile PM, stakeholder alignment, cross-functional collaboration)
+- ✅ Team leadership & Soft skills (Agile PM, stakeholder alignment, cross-functional collaboration)
 - ✅ Business acumen (translating technical work into measurable ROI)
 
 ---
@@ -171,8 +163,6 @@ response = copilot.ask(
     "Which customers are at highest risk of churning?"
 )
 print(response)
-# Output: "Based on our analysis, 247 customers are at high risk. 
-#          Top segments: [details]. Recommended actions: [recommendations]"
 
 ---
 
@@ -197,38 +187,7 @@ print(response)
 
 ---
 
-## Project Structure
-
-enterprise-ai-customer-churn-prediction-platform/
-├── notebooks/
-│   ├── 01_data_engineering/ (SQL DDL, schema design, feature store)
-│   ├── 02_ai_analytics/ (EDA, BI dashboards, business intelligence)
-│   └── 03_machine_learning/ (Model development, evaluation, production)
-├── enterprise-ai/
-│   ├── 04_01_enterprise_ai_copilot.py (LLM integration)
-│   ├── 05_01_agentic_decision_intelligence.py (Multi-agent orchestration)
-│   └── enterprise_ai_app.py (Streamlit dashboard)
-├── mlops/
-│   ├── 06_01_enterprise_mlops.py (Production pipeline)
-│   ├── model_versioning.py (MLflow integration)
-│   ├── deployment_pipeline.py (Docker, CI/CD)
-│   ├── monitoring.py (Performance tracking, drift detection)
-│   └── runbooks/ (Operational procedures)
-├── models/ (Serialized artifacts)
-├── metadata/ (Model registry, lineage)
-├── outputs/ (Predictions, results)
-├── data/ (Datasets)
-├── utils/ (Helper functions)
-├── docs/ (Architecture, data dictionary, model card)
-├── app.py (Main Streamlit app)
-├── requirements.txt
-├── Dockerfile
-└── README.md
-
----
-
 ## Links & Resources
-* **GitHub:** enterprise-ai-customer-churn-prediction-platform
 * **Streamlit App:** Run locally with streamlit run enterprise_ai_app.py
 * **Portfolio Project Piece:** From Data Scientist to AI Systems Builder: How Agile PM + Enterprise AI Delivery Wins in 2026
 
