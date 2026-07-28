@@ -63,11 +63,13 @@ This project demonstrates:
 
 ### Data Pipeline: Multi-Layer Design
 
-┌─────────────────────────────────────────────────────────┐ │ Raw Transactions (Databricks) │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ [BRONZE LAYER] │ │ └─ customer_data (raw view) │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ [SILVER LAYER] │ │ ├─ data_by_date (time-series KPIs) │ │ ├─ data_by_customer (customer metrics) │ │ ├─ data_by_product (product performance) │ │ └─ kpi_earnings_per_day (rolling window analysis) │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ [GOLD LAYER] - ML-Ready Feature Store │ │ ├─ RFM metrics (Recency, Frequency, Monetary) │ │ ├─ Customer value quintiles │ │ ├─ Temporal features (days since purchase) │ │ ├─ Product/payment diversity │ │ └─ Churn label (recency >= 90 days) │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ [ML PIPELINE] │ │ ├─ Baseline models (Logistic Regression, RF) │ │ ├─ Production model (XGBoost ensemble) │ │ ├─ Cross-validation & backtesting │ │ └─ Bias & fairness audit │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ [PRODUCTION DEPLOYMENT] │ │ ├─ Model versioning (joblib + metadata) │ │ ├─ Docker containerization │ │ ├─ Monitoring & alerting │ │ └─ Operational runbooks │ └────────────────────────────────────────
+<img width="4170" height="2998" alt="data_pipeline_architecture" src="https://github.com/user-attachments/assets/0ede23e5-9e73-4e98-9bfe-f04d1b80b695" />
+
 
 ### AI Copilot: Multi-Agent Orchestration
 
-┌─────────────────────────────────────────────────────────┐ │ Executive Question │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ [4-AGENT WORKFLOW] │ │ ├─ Analytics Agent → Analyze KPIs, identify trends │ │ ├─ ML Agent → Interpret predictions, explain features │ │ ├─ Strategy Agent → Convert findings to recommendations │ └─ Executive Agent → Synthesize into executive report │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ [RETRIEVAL + INFERENCE] │ │ ├─ Customer data lookup │ │ ├─ ML model scoring │ │ └─ Business context injection │ └────────────────────┬────────────────────────────────────┘ │ ┌────────────────────▼────────────────────────────────────┐ │ Streamlit Dashboard (Interactive Visualization) │ └────────────────────────────────────────
+<img width="4148" height="2970" alt="ai_copilot_orchestration" src="https://github.com/user-attachments/assets/30e34ec7-f86c-4302-9661-2ccdf3ccc5ed" />
+
 
 ### Agile/PM Framework: 9 Epics, 62 Stories, 287 Points
 
